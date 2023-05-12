@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #4b4949;
+}
+/* ===================HOME PAGE====================  */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.home img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-page-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.home-page-info img {
+  width: 50px;
+}
+.home-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: whitesmoke;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+.links li {
+  padding: 0.25rem;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+/*---------------------------- HOME-FOOTER=========================== */
+.home-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.51rem 4rem;
+}
+
+.home-footer img {
+  width: 9rem;
+}
+.home-footer div li {
+  padding: 0.25rem;
+  border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+/* =======================HISTORY++++++++++++++++++++++++++++ */
+.history {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin: 2rem 0;
+}
+.history img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  position: absolute;
+  max-width: 720px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  color: rgb(44, 48, 66);
+}
+.heading span {
+  color: rgb(61, 61, 104);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 10rem;
+  position: relative;
+}
+.heading span h3 {
+  color: rgb(48, 73, 65);
+  position: absolute;
+  font-size: 2rem;
+  top: 6rem;
+  right: -4rem;
+}
+/* =================CAROUSEL========================= */
+.carousel {
+  background-color: rgba(127, 187, 255, 0.461);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.images-wrapper {
+  display: flex;
+  gap: 1rem;
+  max-width: 1024px;
+
+  /* position: absolute; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  left: 50%;
+  top: 50%;
+}
+.images-wrapper img {
+  width: 250px;
+}
+.wrapper-buttons button {
+  padding: 0.5rem;
+  border: 2px solid rgb(3, 26, 79);
+
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+
+  margin-left: 1rem;
+  font-size: 20px;
+  color: rgb(199, 199, 199);
+  transition: 0.5s;
+}
+.wrapper-buttons button:hover {
+  background-color: rgb(199, 199, 199);
+  color: inherit;
+}
+#pre {
+  border-radius: 10px 0 0 10px;
+}
+#next {
+  border-radius: 0 10px 10px 0;
+}
+/* ================2nd Page ======================== */
+.team-page-heading {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+}
+
+.team-page-heading span {
+  color: rgb(95, 95, 158);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 10rem;
+  position: relative;
+}
+.team-page-heading span h3 {
+  color: rgb(48, 73, 65);
+  position: absolute;
+  font-size: 2rem;
+  top: 6rem;
+  right: -3rem;
+}
+
+/* ============TABS======================= */
+.toggle {
+  background-color: rgb(20, 49, 70);
+  padding: 0.25rem;
+}
+.tabs {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  max-width: 720px;
+  margin: 1rem auto;
+}
+
+.tabs h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  cursor: pointer;
+}
+/* ===========================Team Page====================== */
+.toogle-container {
+  width: 100%;
+  position: relative;
+  /* max-width: 720px; */
+}
+.toogle-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ====================MOUNTAIN============================== */
+.mountain-content {
+  width: 100%;
+  position: absolute;
+  top: 10rem;
+  display: none;
+}
+
+.mountain-wrapper-heading {
+  max-width: max-content;
+  padding: 2rem;
+  margin: auto;
+  background-color: rgba(196, 246, 255, 0.553);
+}
+.mountain-wrapper-heading table {
+  padding: 1rem;
+}
+tr {
+  display: flex;
+  gap: 2rem;
+}
+/* ===============Footer=========================== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(125, 128, 141);
+}
+.footer img {
+  width: 6rem;
+}
+
+/* ==========ACTIVE========================= */
+.tabs button {
+  padding: 1rem;
+
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  color: rgb(165, 163, 160);
+  transition: 0.3s;
+  font-size: 20px;
+}
+.tabs button:hover {
+  background-color: #bdbbbb;
+  color: rgb(52, 52, 95);
+}
+.tabs button:focus {
+  background-color: #f4f0f0;
+  color: rgb(118, 118, 121);
+}
+.panel {
+  display: none;
+}
+/* ========================MEDIA========================== */
+
+@media (max-width: 850px) {
+  .home {
+    min-height: 0;
+    margin-bottom: 4rem;
+  }
+  .home-page {
+    margin: 0.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .heading {
+    position: absolute;
+    max-width: 360px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .heading span {
+    color: rgb(61, 61, 104);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    position: relative;
+  }
+  .heading span h3 {
+    color: rgb(48, 73, 65);
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    left: 4rem;
+  }
+  .heading p {
+    font-size: 0.75rem;
+    color: rgb(44, 48, 66);
+  }
+
+  .history {
+    min-height: 0;
+    margin: 5rem 0;
+  }
+  .carousel {
+    bottom: 0;
+  }
+  .wrapper-buttons button {
+    padding: 0.15rem;
+    font-size: 0.505rem;
+  }
+  .images-wrapper {
+    max-width: 450px;
+    margin: 0 1rem;
+    scroll-behavior: smooth;
+  }
+  .images-wrapper img {
+    width: 125px;
+  }
+
+  .team-page-heading {
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 400px;
+    margin: 5rem auto;
+  }
+
+  .team-page-heading span {
+    margin-right: auto;
+    font-size: 3rem;
+  }
+  .team-page-heading span h3 {
+    color: rgb(48, 73, 65);
+    font-size: 3rem;
+    top: 0rem;
+    left: 4rem;
+  }
+  .footer {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+  }
+
+  .mountain-content {
+    position: static;
+    display: none;
+  }
+  .mountain-wrapper-heading {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+
+    background-color: rgb(20, 49, 70);
+    color: #bdbbbb;
+  }
+  .mountain-wrapper-heading table {
+    padding: 1rem;
+  }
+  tr {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  table {
+    margin: auto;
+  }
+  .toogle-container img {
+    display: none;
+  }
+  .panel {
+    display: none;
+  }
+  .haveto {
+    display: none !important;
+  }
+}
+
